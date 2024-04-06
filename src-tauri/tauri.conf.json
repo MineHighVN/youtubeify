@@ -1,0 +1,40 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "Youtubeify",
+    "version": "0.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "windows": [
+      {
+        "title": "Youtubeify",
+        "width": 800,
+        "height": 600,
+        "additionalBrowserArgs": "--disable-web-security"
+      }
+    ],
+    "security": {
+      "csp": ""
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.youtubeify",
+      "icon": [
+        "icons/favicon.png"
+      ]
+    }
+  }
+}

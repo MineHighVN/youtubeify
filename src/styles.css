@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    color: #0f0f0f;
+    background-color: #f6f6f6;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    font-family: 'Quicksand', Inter, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+*:not(h1, h2, h3, h4, h5) {
+    font-size: 16px;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+button,
+input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9b9b9b;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #818181;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bgColor: #0f0f0f;
+
+        color: #f6f6f6;
+        background-color: var(--bgColor);
+    }
+
+    a:hover {
+        color: #24c8db;
+    }
+
+    input,
+    button {
+        color: #ffffff;
+        background-color: #0f0f0f98;
+    }
+
+    button:active {
+        background-color: #0f0f0f69;
+    }
+}

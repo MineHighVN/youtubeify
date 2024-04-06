@@ -1,0 +1,144 @@
+.searchBoxContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 999px;
+    border: 2px solid #373737;
+    max-width: 600px;
+    width: 90vw;
+}
+
+.searchBox {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+}
+
+.searchBox input {
+    flex: 1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+}
+
+.navigation {
+    position: sticky;
+    width: 100%;
+    background: var(--bgColor);
+    z-index: 999;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.navigation img {
+    cursor: pointer;
+    width: 168px;
+}
+
+.navigation>div {
+    flex: 1;
+}
+
+.searchBox .erase {
+    width: 32px;
+    border: none;
+}
+
+.searchButton {
+    height: 100%;
+}
+
+.searchButton button {
+    padding: 10px 20px;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    border: none;
+    background: #222222;
+}
+
+.searchButton button:hover {
+    background: #2b2a2a;
+}
+
+.sidebarNav {
+    position: sticky;
+    top: 80px;
+    z-index: 9999;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: calc(100vh - 80px);
+    width: 80px;
+    align-items: center;
+}
+
+.bodyContent {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.sidebarNav>a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+    color: #fff;
+    height: 64px;
+}
+
+.sidebarNav>a:hover {
+    color: #c5c5c5;
+}
+
+.children {
+    flex: 1;
+}
+
+.childrenContainer {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.hintBox {
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    width: 100%;
+    top: calc(100% + 10px);
+    border-radius: 10px;
+    background: #212121;
+    padding: 10px 0;
+}
+
+.hintBox>div {
+    position: relative;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+.hintBox>div:hover {
+    background: #383838;
+}
+
+.hintBox .select {
+    background: #635f5f;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+}

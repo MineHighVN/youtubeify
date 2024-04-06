@@ -1,0 +1,97 @@
+.channelContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.channelContainer .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+}
+
+.results>div {
+    box-sizing: border-box;
+    max-width: calc(100% - 20px);
+}
+
+.video {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.video img {
+    border-radius: 10px;
+}
+
+.video h3 {
+    font-size: 20px;
+}
+
+.moreVideoInformation {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.moreVideoInformation * {
+    font-size: 14px;
+}
+
+.results h2 {
+    margin-bottom: 5px;
+}
+
+.video,
+.channelContainer {
+    cursor: pointer;
+}
+
+.thumbnailContainer {
+    position: relative;
+}
+
+.thumbnailContainer img {
+    width: 360px;
+}
+
+.thumbnailContainer div {
+    position: absolute;
+    bottom: 10px;
+    padding: 2px 10px;
+    right: 5px;
+    background: #000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.miniAvatar {
+    width: 32px;
+    border-radius: 50% !important;
+}
+
+.vAvatarContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
